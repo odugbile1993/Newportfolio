@@ -1,17 +1,19 @@
-*{
+* {
     padding: 0;
     margin: 0;
     font-family: 'Josefin Sans', sans-serif;
     box-sizing: border-box;
 }
-.hero{
+
+.hero {
     height: 100vh;
     width: 100%;
-    background-image: url(../myportfolio/image.png);
+    background-image: url('./image.png');
     background-size: cover;
     background-position: center;
 }
-nav{
+
+nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -20,29 +22,28 @@ nav{
     padding-right: 8%;
 }
 
-.logo{
+.logo {
     color: white;
     font-size: 35px;
     letter-spacing: 1px;
     cursor: pointer;
 }
-span{
+
+span {
     color: #f9004d;
 }
-nav ul li{
+
+nav ul li {
     list-style-type: none;
     display: inline-block;
-    padding: 10px  25px;
+    padding: 10px 25px;
 }
-nav ul li a{
+
+nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
     text-transform: capitalize;
-}
-nav ul li a:hover{
-    color:  #f9004d;
-    transition: 4s;
 }
 
 .btn{
@@ -58,69 +59,98 @@ nav ul li a:hover{
     transform: scale(1.2);
 }
 
-.content{
+nav ul li a:hover {
+    color: #f9004d;
+    transition: 4s;
+}
+
+.btn {
+    background-color: #f9004d;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: transform 0.4s;
+}
+
+.btn:hover {
+    transform: scale(1.2);
+}
+
+.content {
     position: absolute;
     top: 50%;
     left: 8%;
     transform: translateY(-50%);
 }
-h1{
+
+h1 {
     color: white;
-    margin: 20px 0px 20px;
-    font: size 75px; 
+    margin: 20px 0;
+    font-size: 75px;
 }
-h3{
+
+h3 {
     color: white;
     font-size: 25px;
     margin-bottom: 50px;
 }
-h4{
-    color:  #fcfc;
+
+h4 {
+    color: #fcfc;
     letter-spacing: 2px;
     font-size: 20px;
 }
-.newslatter form {
-    width: 380px;
-    max-width: 100%;
-    position: relative;
-    display: flex; /* Align items side by side */
+
+.newsletter {
+    text-align: center; /* Center align the form */
+    margin: 20px 0; /* Add some margin for spacing */
 }
 
-.newslatter form input[type="email"] {
-    flex: 1; /* Make input expand */
-    padding: 14px 20px;  
-    border: 2px solid #f9004d;
-    outline: none;
-    border-radius: 30px 0 0 30px; /* Rounded corners on left side */
+.newsletter-input {
+    padding: 10px; /* Padding for better input appearance */
+    border: 1px solid #ccc; /* Border style */
+    border-radius: 5px 0 0 5px; /* Rounded corners (left only) */
+    width: 300px; /* Set width for the input field */
+    font-size: 16px; /* Font size */
+    margin-right: -6px; /* Remove space between input and button */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add slight shadow */
 }
 
-.newslatter form input[type="submit"] {
-    outline: none;
-    border: none;
-    padding: 14px 30px;
-    border-radius: 0 30px 30px 0; /* Rounded corners on right side */
-    background-color: #f9004d;
-    color: white;
-    box-shadow: 0px 0px 5px #000, 0px 0px 15px #858585;
-    cursor: pointer;
-    transition: 0.3s;
+.newsletter-button {
+    padding: 10px 20px; /* Padding for the button */
+    background-color: #007bff; /* Button background color */
+    color: white; /* Text color */
+    border: 1px solid #007bff; /* Match border color with background */
+    border-radius: 0 5px 5px 0; /* Rounded corners (right only) */
+    cursor: pointer; /* Change cursor on hover */
+    font-size: 16px; /* Font size */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.newsletter-button:hover {
+    background-color: red; /* Change to red on hover */
+    border-color: red; /* Change border color to match the background */
 }
 
 
-.about{
+.about {
     width: 100%;
     padding: 100px;
     background-color: #191919;
-
 }
-.about img{
+
+.about img {
     height: auto;
     width: 430px;
 }
-.about-text{
+
+.about-text {
     width: 550px;
 }
-.main{
+
+.main {
     width: 1130px;
     max-width: 95%;
     margin: 0 auto;
@@ -128,27 +158,31 @@ h4{
     align-items: center;
     justify-content: space-around;
 }
-.about-text h2{
+
+.about-text h2 {
     color: white;
     font-size: 75px;
     text-transform: capitalize;
     margin-bottom: 20px;
 }
-.about-text h5{
+
+.about-text h5 {
     color: white;
     letter-spacing: 2px;
     font-size: 22px;
     margin-bottom: 25px;
     text-transform: capitalize;
 }
-.about-text p{
+
+.about-text p {
     color: #fcfc;
     letter-spacing: 1px;
     line-height: 28px;
     font-size: 18px;
-    margin-bottom: 45px;   
+    margin-bottom: 45px;
 }
-button{
+
+button {
     background-color: #f9004d;
     color: white;
     text-decoration: none;
@@ -158,9 +192,10 @@ button{
     border-radius: 30px;
     transition: 4s;
 }
-button:hover{
+
+button:hover {
     background-color: transparent;
-    border: 2px solid  #f9004d;
+    border: 2px solid #f9004d;
     cursor: pointer;
 }
 
@@ -210,25 +245,29 @@ button:hover{
     border: 2px solid #f9004d;
     cursor: pointer;
 }
-.service{
-    background: #101010 ;
+
+.service {
+    background: #101010;
     width: 100%;
-    padding: 100px, 0px;
+    padding: 100px 0; /* Use space instead of comma */
 }
-.title h2{
+
+.title h2 {
     color: white;
     font-size: 75px;
     width: 1130px;
     margin: 30px auto;
     text-align: center;
 }
-.box{
+
+.box {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 400px;
 }
-.Card{
+
+.Card {
     height: 365px;
     width: 335px;
     padding: 20px 35px;
@@ -239,25 +278,29 @@ button:hover{
     overflow: hidden;
     text-align: center;
 }
-.Card i{
+
+.Card i {
     font-size: 50px;
     display: block;
     text-align: center;
-    margin: 25px 0px;
+    margin: 25px 0;
     color: #f9004d;
 }
-h5{
+
+h5 {
     color: white;
     font-size: 23px;
     margin-bottom: 15px;
 }
-.pra{
+
+.pra {
     color: #fcfc;
     font-size: 16px;
     line-height: 27px;
     margin-bottom: 25px;
 }
-.Card .button{
+
+.Card .button {
     background-color: #f9004d;
     color: white;
     text-decoration: none;
@@ -267,12 +310,14 @@ h5{
     border-radius: 30px;
     transition: .4s;
 }
-.Card .button:hover{
+
+.Card .button:hover {
     background-color: transparent;
     border: 2px solid #f9004d;
-    cursor: pointer;   
+    cursor: pointer;
 }
-.contact-me{
+
+.contact-me {
     width: 100%;
     height: 290px;
     background: #191919;
@@ -281,12 +326,14 @@ h5{
     flex-direction: column;
     justify-content: center;
 }
-.contact-me p{
+
+.contact-me p {
     color: white;
     font-size: 30px;
     font-weight: bold;
 }
-.contact-me .button-two{
+
+.contact-me .button-two {
     background-color: #f9004d;
     color: white;
     text-decoration: none;
@@ -296,12 +343,14 @@ h5{
     border-radius: 30px;
     transition: 4s;
 }
-.contact-me .button-two:hover{
+
+.contact-me .button-two:hover {
     background-color: transparent;
     border: 2px solid #f9004d;
     cursor: pointer;
 }
-footer{
+
+footer {
     position: relative;
     width: 100%;
     height: 400px;
@@ -311,14 +360,15 @@ footer{
     align-items: center;
     justify-content: center;
 }
-footer p:nth-child(1){
+
+footer p:nth-child(1) {
     font-size: 30px;
     color: white;
     margin-bottom: 20px;
     font-weight: bold;
 }
 
-footer p:nth-child(2){
+footer p:nth-child(2) {
     color: white;
     font-size: 17px;
     width: 500px;
@@ -326,10 +376,13 @@ footer p:nth-child(2){
     line-height: 26px;
 }
 
-.social{
+.social {
     display: flex;
+    justify-content: center; /* Center align social icons */
+    margin-top: 20px; /* Add spacing between text and icons */
 }
-.social a{
+
+.social a {
     width: 45px;
     height: 45px;
     display: flex;
@@ -342,17 +395,15 @@ footer p:nth-child(2){
     text-decoration: none;
     font-size: 20px;
 }
-.social a:hover{
+
+.social a:hover {
     transform: scale(1.3);
     transition: .3s;
 }
-.end{
+
+.end {
     position: absolute;
     color: #f9004d;
     bottom: 35px;
     font-size: 14px;
 }
-
-
-
-
